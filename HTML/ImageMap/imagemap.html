@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of imagemap</title>
+</head>
+<body>
+    <marquee direction="right" onmouseover="start()">this is example of image map</marquee>
+    <map name="image">
+        <area shape="rect" coords="7,7,344,210" href="rectangle.html">
+        <area shape="circle" coords="504,109,101" href="circle.html">
+    </map>
+    <img src="both.jpg" usemap="#image"/>
+</body>
+</html>
