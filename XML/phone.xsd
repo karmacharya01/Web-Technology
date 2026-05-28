@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root element -->
+    <xs:element name="phonebook">
+
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="title" type="xs:string" />
+
+                <xs:element name="entries">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="entry" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <!-- Name -->
+                                        <xs:element name="name">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="first" type="xs:string" />
+                                                    <xs:element name="middle" type="xs:string"
+                                                        minOccurs="0" />
+                                                    <xs:element name="last" type="xs:string" />
+                                                </xs:sequence>
+
+                                                <!-- Gender Attribute -->
+                                                <xs:attribute name="gender" use="required">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="male" />
+                                                            <xs:enumeration value="female" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                        <!-- Phone -->
+                                        <xs:element name="phone" type="xs:string" />
+
+                                        <!-- City (optional) -->
+                                        <xs:element name="city" type="xs:string" minOccurs="0" />
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>

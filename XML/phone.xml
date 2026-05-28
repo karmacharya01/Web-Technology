@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="phone.xsl"?>
+
+<phone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="phone.xsd">
+
+  <title>test</title>
+
+  <entries>
+
+    <entry>
+      <name gender="male">
+        <first>test</first>
+        <last>sdjh</last>
+      </name>
+      <phone>97458555</phone>
+      <city>Chitwan, Kathmandu</city>
+    </entry>
+
+    <entry>
+      <name gender="female">
+        <first>test</first>
+        <middle>shdgsu</middle>
+        <last>zdgs</last>
+      </name>
+      <phone>478958934</phone>
+      <city>Chitwan, Kathmandu</city>
+    </entry>
+
+  </entries>
+
+</phone>
