@@ -1,0 +1,12 @@
+h1 {
+    font-weight: normal;
+    font-size: 16pt;
+    color: red
+}
+
+p {
+    font-weight: bold;
+    text-align: center;
+    font-family: "sans serif";
+    color: blue
+}

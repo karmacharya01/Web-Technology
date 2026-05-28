@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Combinators</title>
+  <style>
+    /* Descendant (space) */
+    div p {
+      color: red;
+    }
+
+    /* Child (>) */
+    div>h2 {
+      color: blue;
+    }
+
+    /* Adjacent sibling (+) */
+    div+p {
+      color: green;
+    }
+
+    /* General sibling (~) */
+    div~span {
+      color: purple;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h2>Direct Child (Blue)</h2>
+    <p>Inside div (Red)</p>
+  </div>
+
+  <p>Next sibling of div (Green)</p>
+
+  <span>Sibling span (Purple)</span>
+
+</body>
+
+</html>
